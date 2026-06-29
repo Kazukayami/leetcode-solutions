@@ -5,8 +5,8 @@ class Solution(object):
         :rtype: bool
         """
         dict={}
-        for i,value in enumerate(nums):
-            if value in dict:
+        for i in range(len(nums)):
+            if nums[i] in dict:
                 return True
-            dict[value]=i
+            dict[nums[i]]=i
         return False
